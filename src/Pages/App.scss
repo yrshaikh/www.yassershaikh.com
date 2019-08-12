@@ -1,0 +1,11 @@
+@import "~antd/dist/antd.css";
+
+.AppLayout {
+  font-size: 14px;
+  background: #eeeeee;
+  color: #000;
+
+  &__Content {
+    padding: 15px 50px;
+  }
+}

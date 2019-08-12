@@ -1,0 +1,35 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "max-line-length": [true, 200],
+    "variable-name": [true, "allow-pascal-case"],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-first"
+      }
+    ],
+    "no-implicit-dependencies": [true, "dev"],
+    "trailing-comma": false,
+    "no-empty-interface": false,
+    "no-internal-module": false,
+    "no-namespace": false,
+    "arrow-parens": false,
+    "typedef": [
+      true,
+      "call-signature",
+      //"arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "array-destructuring"
+    ]
+  },
+  "rulesDirectory": []
+}
