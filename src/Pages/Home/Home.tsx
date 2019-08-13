@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <Row>
-          <Col span={6}>
+          <Col span={6} xs={24}>
             <div className="Home__Shouts">
               <div className="Home__Shout1">Hi there! My name is</div>
               <img
@@ -28,7 +28,7 @@ class Home extends React.Component {
               </div>
             </div>
           </Col>
-          <Col span={18}>
+          <Col span={18} xs={0}>
             <ResumePage />
           </Col>
         </Row>
