@@ -31,11 +31,7 @@ export default class ResumePage extends Component<
     }
     return (
       <div className="ResumePage">
-        <Row>
-          <Col offset={3} span={18}>
-            {this.renderResume()}
-          </Col>
-        </Row>
+        {this.renderResume()}
       </div>
     );
   }
