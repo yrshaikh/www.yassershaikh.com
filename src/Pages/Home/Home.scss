@@ -1,29 +1,10 @@
+@import "./../Variables.scss";
+
 .Home {
   padding: 24px;
   margin: 0 auto;
-  .Home__Shouts {
-    margin: 0 80px 0 auto;
-    text-align: right;
-  }
-  .Home__Shout1 {
-    font-size: 24px;
-    color: #f5a81e;
-    margin-bottom: 15px;
-  }
-  .Home__Profile {
-    height: 160px;
-    border-radius: 50%;
-  }
-  .Home__Shout2 {
-    font-size: 60px;
-    font-family: "Sailec-Bold";
-    line-height: 1.1;
-    margin-bottom: 30px;
-  }
-  .Home__Shout3 {
-    font-size: 20px;
-    font-family: "Sailec-Light";
-    color: #7f7f81;
-    line-height: 1.5;
+  &__Welcome {
+    text-align: center;
+    margin: 0 0 150px 0;
   }
 }

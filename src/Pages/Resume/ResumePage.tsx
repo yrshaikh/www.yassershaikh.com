@@ -30,7 +30,7 @@ export default class ResumePage extends Component<
       return <p>Loading resume...</p>;
     }
     return (
-      <div className="ResumePage">
+      <div id="resume" className="ResumePage">
         {this.renderResume()}
       </div>
     );

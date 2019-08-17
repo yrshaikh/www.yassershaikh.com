@@ -1,0 +1,93 @@
+@import "./../../../Variables.scss";
+
+.TitleAndSubTitle {
+  &__Title {
+    font-size: 120px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    height: 500px;
+  }
+  &__SubTitle {
+    font-family: $font-light;
+    font-size: 32px;
+    color: #ffe13e;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .TitleAndSubTitle {
+    &__Title {
+      font-size: 70px;
+      height: 200px;
+    }
+    &__SubTitle {
+      font-size: 18px;
+    }
+  }
+}
+
+.glitch {
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  &:before,
+  &:after {
+    display: block;
+    content: "YASSER SHAIKH";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  &:after {
+    color: #f0f;
+    z-index: -2;
+  }
+  &:before {
+    color: #0ff;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    }
+    &:after {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+        infinite;
+    }
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-4px, 4px);
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    -webkit-transform: translate(-4px, -4px);
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  80% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
