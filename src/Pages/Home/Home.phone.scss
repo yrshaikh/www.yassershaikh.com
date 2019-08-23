@@ -1,0 +1,10 @@
+@import "./../Variables.scss";
+
+.Home {
+  padding: 24px;
+  margin: 0 auto;
+  &__Welcome {
+    text-align: center;
+    margin: 0 0 150px 0;
+  }
+}

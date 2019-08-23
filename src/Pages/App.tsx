@@ -8,6 +8,9 @@ import PageNotFound from "./Common/PageNotFound/PageNotFound";
 import Home from "./Home/Home";
 import ResumePage from "./Resume/ResumePage";
 
+import { isBrowser } from "react-device-detect";
+import HomePhone from "./Home/Home.phone";
+
 const { Content } = Layout;
 
 interface IAppProps {
@@ -27,7 +30,17 @@ class App extends React.Component<IAppProps, {}> {
       <Layout className="AppLayout">
         <Content className="AppLayout__Content">
           <Switch>
-            <Route exact path="/" render={(): JSX.Element => <Home />} />
+            <Route
+              exact
+              path="/"
+              render={(): JSX.Element =>
+                isBrowser ? (
+                  <Home isMobile={false} />
+                ) : (
+                  <HomePhone isMobile={true} />
+                )
+              }
+            />
             <Route
               path="/pagenotfound"
               render={(): JSX.Element => <PageNotFound />}
