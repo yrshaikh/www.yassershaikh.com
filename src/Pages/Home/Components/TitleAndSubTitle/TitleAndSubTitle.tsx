@@ -14,7 +14,8 @@ class TitleAndSubTitle extends React.Component<IProps, {}> {
     return (
       <div>
         <div className={this.constructClassName("Title", isMobile)}>
-          <span className="glitch">YASSER SHAIKH</span>
+          YASSER <br />
+          SHAIKH
         </div>
         <div className={this.constructClassName("SubTitle", isMobile)}>
           I design & build things on the web.

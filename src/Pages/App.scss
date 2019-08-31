@@ -1,12 +1,9 @@
 @import "~antd/dist/antd.css";
-@import "./Glitch.scss";
 @import "./Variables.scss";
 
 .AppLayout {
   font-size: 14px;
-  background: $background-color;
   color: #fff;
-
   &__Content {
     padding: 15px 50px;
   }

@@ -27,9 +27,9 @@ class Home extends React.Component<IProps, {}> {
           <Col className="Home__Welcome" span={24}>
             <TitleAndSubTitle isMobile={this.props.isMobile} />
           </Col>
-          <Col span={24}>
-            <ResumePage />
-          </Col>
+          {/*<Col span={24}>*/}
+          {/*  <ResumePage />*/}
+          {/*</Col>*/}
         </Row>
       </div>
     );
